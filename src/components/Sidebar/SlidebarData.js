@@ -3,19 +3,19 @@ import React from 'react';
 export const SlidebarData = [
     {
         title: "Home",
-        link: "/home"
+        link: "home"
     },
     {
         title: "About",
-        link: "/about"
+        link: "about"
     },
     {
         title: "Services",
-        link: "/services"
+        link: "services"
     },
     {
         title: "Contact",
-        link: "/contact"
+        link: "contact"
     }
 ]
     

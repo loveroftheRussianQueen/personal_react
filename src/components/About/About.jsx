@@ -1,17 +1,21 @@
 import React from 'react';
+import { useState } from 'react';
 import './About.scss';
 import img from '../../assets/man.jpg'; 
 
 const About = () => {
+
+    const [button, setButton] = useState(false);
+
     return (
-        <div className="about">
+        <div className="about" id="about">
             <div className="head">
                 <span>About me</span>
                 <p>Get to know me</p>
             </div>
             <div className="about_main">
                 <div className="about_left">
-                    <div class="img">
+                    <div className="img">
                          <img src={img}/>
                     </div>
                 </div>
@@ -44,6 +48,9 @@ const About = () => {
                         </div>   
                     </div>
                    </div>
+                   <a
+                   className={`btn_red ${button ? "active" : ""}`} 
+                   onClick={() => setButton(!button)}>Contact me</a>
                 </div>
             </div>
         </div>

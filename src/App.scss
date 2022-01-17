@@ -9,7 +9,6 @@
 }
 
 body{
-    height:100vh;
     font-family: $font-family;
     font-weight: 400;
     line-height: 1.5;
@@ -31,7 +30,3 @@ a{
     }
 }
 
-.block{
-    @include flex(unset, unset);
-    flex-direction: column;
-}

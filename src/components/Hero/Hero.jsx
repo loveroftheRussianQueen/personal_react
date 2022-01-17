@@ -12,7 +12,7 @@ const Hero = (props) => {
             }, 100);
         }, []);
     return (
-        <div className="hero">
+        <div className="hero" id="home">
             {showParticles &&(
                 <Particles className="particles"
                 params={{
