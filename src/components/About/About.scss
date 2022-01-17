@@ -1,0 +1,117 @@
+@use '../../scss' as *;
+
+.about{
+    @include flex(unset, unset);
+    flex-direction: column;
+    height:100vh;
+    width:100%;
+
+    .about_main{
+        @include flex(center, center);
+        height: 100%;
+        width:100%;
+
+        .about_left{
+            @include flex(center, center);
+            width:50%;
+            height: 100%;
+
+                img{
+                    margin-left: 4rem;
+                    height:500px;
+                    max-width: 400px;
+                    object-fit: cover;
+                    border: 1px solid #dee2e6;
+                }
+            }
+    
+        .about_right{
+            @include flex(center, flex-start);
+            width:40%;
+            height: 100%;
+            flex-direction: column;
+
+            #who{
+                color: #dc3545;
+                font-size: 22px;
+                margin-bottom: 10px;
+                text-align: left;
+            }
+
+            .rows{
+                    @include flex(unset, space-between);
+                    height: 100%;
+                    width: 100%;
+                    flex-wrap: wrap;
+
+                
+                .row_1, .row_2{
+                    width: 100%;
+                    height:50%;
+
+                    div{
+                        @include flex(unset, unset);
+                        margin:10px;
+                        flex: 1 1 auto;
+
+                        span{
+                            color: rgb(46, 8, 8);
+                            font-weight: 600;
+                            margin-right: 10px;
+                        }
+        
+                        p{
+                            font-weight: 400;
+                            font-size: 18px;
+                            color:#222;
+                        }
+
+                    }
+
+                }
+            }
+
+            h6{
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 1.5;
+                margin-bottom: 15px;
+                color:#222;
+            }
+
+            .p_1{
+                border-bottom: 2px solid rgba(0,0,0,.08);
+                margin-bottom: 0;
+                padding-bottom: 27px;
+                font-weight: 400;
+                font-size: 18px;
+                color:#222;
+            }
+        }
+    }
+
+    .head{
+        @include flex(center, center);
+        width:50%;
+        flex-direction: column;
+        height: 250px;
+
+        span{
+            font-size: 40px;
+            font-weight: 800;
+            letter-spacing: -.25px;
+            line-height: 100%;
+            color: #222;
+            margin-top: 1rem;
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            margin-right:2rem;
+            color:#222;
+        }
+    }
+}

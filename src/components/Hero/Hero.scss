@@ -1,0 +1,67 @@
+@use '../../scss' as *;
+
+.hero{
+    @include flex(center, unset);
+    height:100vh;
+    width:100%;
+    background-image: url('../../assets/laptop.jpg');
+    box-shadow: inset 100px 80px 277px 3px #050504;
+    z-index:-1;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include mobile{
+        background-size:cover;
+        background-repeat:initial;
+    }
+
+    .particles{
+        height:100vh;
+        width:100%;
+    }
+
+    .home_name{
+        position: absolute;
+        top:40%;
+        left:45%;
+        text-align: center;
+        color: #fff;
+        font-size: 68px;
+        font-weight: 700;
+        letter-spacing: .3px;
+
+        @include mobile{
+            left:13%;
+            font-size: 40px;
+        }
+
+        span{
+            margin-left: 20px;
+            color:#dc3545;
+        }
+
+    }
+
+    .typing{
+        @include flex(unset, unset);
+        flex-direction: row;
+        position: absolute;
+        top:50%;
+        left:45%;
+        text-align: center;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 400;
+        letter-spacing: .3px;
+        margin:30px;
+
+        @include mobile{
+            left:15%;
+            margin:20px;
+        }
+
+        span{
+            margin-left:5px;
+        }
+    }
+}

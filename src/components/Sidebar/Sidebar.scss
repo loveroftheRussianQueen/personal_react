@@ -1,0 +1,128 @@
+@use '../../scss/' as *;
+
+.sidebar{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    height:100vh;
+    width: 235px;
+    background-color:$body-bg;
+    @include flex(center, center);
+    flex-direction: column;
+
+    @include mobile{
+        width:100%;
+        height:70px;
+        background-color: #222;
+    }
+
+    .btn{
+        display:none;
+        position: absolute;
+        left:2%;
+        cursor: pointer;
+        margin-left: 20px;
+        background-color: #333;
+        padding: 4px 10px;
+        border-color: #222;
+        border-radius: 3px;
+
+        @include mobile{
+            display: flex;
+        }
+    }
+
+    .profile{
+        @include flex(center, center);
+        flex-direction: column;
+        height:30%; 
+        width:80%;
+        margin:auto;
+
+        @include mobile{
+            display: none;
+        }
+
+        .sidebar_name{
+            color: #fff;
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+
+    }
+
+    #hidden{
+        display: flex;
+        @include mobile{
+            position: absolute;
+            left:25px;
+            top:50px;
+            height: 130px;
+            width:30%;
+            background-color: #222;
+            flex-direction: column;
+            z-index: 99;
+
+            #active{
+                color: #dc3545;
+            }
+    
+            .row{
+                cursor: pointer;
+                text-align: left;
+                width:100%;
+                height: 50px;
+                list-style-type: none;
+                padding:15px;
+                margin:0;
+                color: rgba(232,232,232,.95);
+                font-size: 16px;
+                letter-spacing: .5px;
+                line-height: 100%;
+    
+                @include mobile{
+                    height:30px;
+                }
+            }
+        }
+    }
+
+    .sidebarlist{
+        @include flex(unset, center);
+        flex-direction: column;
+        height:auto;
+        width:100%;
+        padding:0;
+        margin:auto;
+        text-align: center;
+
+        @include mobile{
+            display: none;
+        }
+
+
+        #active{
+            color: #dc3545;
+        }
+
+        .row{
+            cursor: pointer;
+            width:100%;
+            height: 50px;
+            list-style-type: none;
+            margin:0;
+            color: rgba(232,232,232,.95);
+            font-size: 16px;
+            letter-spacing: .5px;
+            line-height: 100%;
+
+            @include mobile{
+                height:30px;
+            }
+        }
+    }
+}
