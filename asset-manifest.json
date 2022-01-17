@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/personal_react/static/css/main.a774c778.chunk.css",
+    "main.js": "/personal_react/static/js/main.4c41cf64.chunk.js",
+    "main.js.map": "/personal_react/static/js/main.4c41cf64.chunk.js.map",
+    "runtime-main.js": "/personal_react/static/js/runtime-main.a506d7c7.js",
+    "runtime-main.js.map": "/personal_react/static/js/runtime-main.a506d7c7.js.map",
+    "static/js/2.0d633316.chunk.js": "/personal_react/static/js/2.0d633316.chunk.js",
+    "static/js/2.0d633316.chunk.js.map": "/personal_react/static/js/2.0d633316.chunk.js.map",
+    "index.html": "/personal_react/index.html",
+    "static/css/main.a774c778.chunk.css.map": "/personal_react/static/css/main.a774c778.chunk.css.map",
+    "static/js/2.0d633316.chunk.js.LICENSE.txt": "/personal_react/static/js/2.0d633316.chunk.js.LICENSE.txt",
+    "static/media/Hero.scss": "/personal_react/static/media/laptop.b8912a0d.jpg",
+    "static/media/man.20678e25.jpg": "/personal_react/static/media/man.20678e25.jpg",
+    "static/media/spike_pic.fea382bb.jpg": "/personal_react/static/media/spike_pic.fea382bb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a506d7c7.js",
+    "static/js/2.0d633316.chunk.js",
+    "static/css/main.a774c778.chunk.css",
+    "static/js/main.4c41cf64.chunk.js"
+  ]
+}
